@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document id="root_doc">
+    <Schema id="sample" name="sample">
+      <SimpleField name="category" type="string"/>
+    </Schema>
+    <Schema id="sample.schema">
+      <SimpleField name="category" type="string"/>
+    </Schema>
+    <Document id="sample">
+      <name>sample</name>
+      <Placemark id="sample.1">
+        <name>block</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#sample.schema">
+            <SimpleData name="category">parcel</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+                77.59,12.97,0
+                77.592,12.97,0
+                77.592,12.972,0
+                77.59,12.972,0
+                77.59,12.97,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark id="sample.2">
+        <name>road</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#sample.schema">
+            <SimpleData name="category">line</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            77.59,12.97,0
+            77.595,12.975,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark id="sample.3">
+        <name>marker</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#sample.schema">
+            <SimpleData name="category">poi</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            77.591,12.971,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Document>
+  </Document>
+</kml>
